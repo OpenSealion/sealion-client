@@ -1,7 +1,7 @@
 {
   "name": "sea-lion-client",
   "private": false,
-  "version": "0.1.3",
+  "version": "0.1.4",
   "license": "MIT",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
