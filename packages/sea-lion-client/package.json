@@ -53,6 +53,5 @@
     "shelljs": "^0.8.5",
     "tar-pack": "^3.4.1",
     "tmp": "^0.2.1"
-  },
-  "gitHead": "3c2cd268283f38c3e9cf50eeccf87a08d6a70527"
+  }
 }
