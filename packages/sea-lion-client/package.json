@@ -1,7 +1,7 @@
 {
   "name": "sea-lion-client",
   "private": false,
-  "version": "0.1.1",
+  "version": "0.1.2",
   "license": "MIT",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
@@ -35,9 +35,9 @@
     "typescript": "^4.7.4"
   },
   "dependencies": {
-    "@sea-lion/app-template": "^0.1.1",
-    "@sea-lion/app-vite-template": "^0.1.1",
-    "@sea-lion/lib-template": "^0.1.1",
+    "@sea-lion/app-template": "^0.1.2",
+    "@sea-lion/app-vite-template": "^0.1.2",
+    "@sea-lion/lib-template": "^0.1.2",
     "chalk": "^4.0.0",
     "clear-console": "^1.1.0",
     "commander": "^9.4.0",

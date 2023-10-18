@@ -1,7 +1,7 @@
 {
   "name": "@sea-lion/app-vite-template",
   "private": false,
-  "version": "0.1.1",
+  "version": "0.1.2",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
