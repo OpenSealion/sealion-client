@@ -18,5 +18,5 @@
 <p>2. react-router-dom提供的组件和自定义的layout，page组件可以根据需要组合</p>
 
 # 文档
-[mm-cli使用文档](https://aicarrier.feishu.cn/docx/doxcnhycCgdhqozV7yl1LIJdclc)
+[sea-lion-client使用文档](https://aicarrier.feishu.cn/docx/doxcnhycCgdhqozV7yl1LIJdclc)
 

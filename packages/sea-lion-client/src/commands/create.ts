@@ -82,7 +82,7 @@ export const start = (appName, options) => {
         create(appName, template);
         return;
     }
-    figlet('^ mm cli ^', async (err, data) => {
+    figlet('^ SeaLion Client ^', async (err, data) => {
         if (err) {
             console.dir(err);
         }
@@ -94,7 +94,7 @@ export const start = (appName, options) => {
 
         if (!appName) {
             chalk.red('请输入app name!');
-            chalk.white('请重新执行create-mm-app create <app name>');
+            chalk.white('请重新执行slc create <app name>');
             process.exit(1);
         }
 

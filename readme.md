@@ -8,7 +8,7 @@
 lerna bootstrap
 
 ## 本地运行
-node packages/create-mm-app/bin/create-mm-app.js create [project-name]
+node packages/sea-lion-client/bin/sea-lion-client.js create [project-name]
 
 ## 关于开发
 ### 现有模板维护
@@ -34,13 +34,13 @@ export const TemplateTypeMap = {
 };
 ```
 <p>上面map维护了所有cli依赖的模板，也就是可供用户选择的模板，key值任意，value值对应模板的名字，注意，必须和package.json中的name一致</p>
-<p>4. 进入create-mm-app目录执行npm run build即可</p>
+<p>4. 进入sea-lion-client目录执行npm run build即可</p>
 
 ## 关于发布
 lerna publish
 
 ## 使用文档
-[mm-cli使用文档](https://aicarrier.feishu.cn/docx/doxcnhycCgdhqozV7yl1LIJdclc)
+[sea-lion-client使用文档](https://aicarrier.feishu.cn/docx/doxcnhycCgdhqozV7yl1LIJdclc)
 
 ## 遗留功能
 1. 优化维护成本
