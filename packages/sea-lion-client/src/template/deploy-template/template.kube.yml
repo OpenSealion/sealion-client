@@ -17,7 +17,7 @@ spec:
         workfor: biz
       containers:
         - name: _CI_PROJECT_NAME
-          image: 10.1.32.6:28080/_project/_CI_PROJECT_NAME:latest
+          image: <ip:port>/_project/_CI_PROJECT_NAME:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 80

@@ -1,17 +1,17 @@
 {
-  "name": "create-mm-app",
-  "version": "0.9.3",
+  "name": "sea-lion-client-tool",
+  "version": "0.1.0",
   "license": "MIT",
   "publishConfig": {
-    "registry": "http://nexus.openxlab.org.cn/repository/npm-hosted"
+    "registry": "https://registry.npmjs.org/"
   },
   "repository": {
     "type": "http",
-    "url": "http://10.1.32.6/openmmlab/common/fe/mm-cli.git",
-    "directory": "packages/create-mm-app"
+    "url": "http://gitlab.openxlab.org.cn/infrastructure/fe/sea-lion-client.git",
+    "directory": "packages/sea-lion-client"
   },
-  "description": "",
-  "main": "./bin/create-mm-app.js",
+  "description": "sea-lion-client tool",
+  "main": "./bin/sea-lion-client.js",
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only src/index.ts && npm run copy-template",
     "eslint": "eslint --fix src --ext .ts --max-warnings=0",
@@ -19,14 +19,15 @@
     "copy-template": "cp -r src/template lib/template"
   },
   "bin": {
-    "create-mm-app": "./bin/create-mm-app.js"
+    "slc": "./bin/sea-lion-client.js",
+    "sea-lion-client": "./bin/sea-lion-client.js"
   },
   "files": [
     "lib",
     "bin"
   ],
   "keywords": [],
-  "author": "duxiaoqing",
+  "author": "jsweber",
   "devDependencies": {
     "@types/node": "^18.7.3",
     "ts-node-dev": "^2.0.0",
@@ -43,9 +44,6 @@
     "handlebars": "^4.7.8",
     "inquirer": "^6.0.0",
     "js-yaml": "^4.1.0",
-    "mm-lib-template": "^0.3.12",
-    "mm-template": "^0.6.7",
-    "mm-template-vite": "^0.3.3",
     "ora": "^6.1.2",
     "request": "^2.88.2",
     "shelljs": "^0.8.5",

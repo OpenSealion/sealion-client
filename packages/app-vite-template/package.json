@@ -1,13 +1,13 @@
 {
-  "name": "mm-template-vite",
-  "version": "0.3.3",
+  "name": "@sea-lion/app-vite-template",
+  "version": "0.1.0",
   "publishConfig": {
-    "registry": "http://nexus.openxlab.org.cn/repository/npm-hosted"
+    "registry": "https://registry.npmjs.org/"
   },
   "repository": {
     "type": "http",
-    "url": "http://10.1.32.6/openmmlab/common/fe/mm-cli.git",
-    "directory": "packages/mm-template-vite"
+    "url": "http://gitlab.openxlab.org.cn/infrastructure/fe/sea-lion-client.git",
+    "directory": "packages/app-vite-vite"
   },
   "scripts": {
     "start": "node scripts/dev.js",

@@ -1,15 +1,15 @@
 {
-  "name": "root",
+  "name": "sea-lion-client",
   "workspaces": [
     "packages/*"
   ],
   "publishConfig": {
-    "registry": "http://nexus.openxlab.org.cn/repository/npm-all"
+    "registry": "https://registry.npmjs.org/"
   },
   "scripts": {
-    "dev": "cd packages/create-mm-app && npm run dev",
-    "build": "cd packages/create-mm-app && npm run build",
-    "link": "cd packages/create-mm-app && sudo npm link"
+    "dev": "cd packages/sea-lion-client && npm run dev",
+    "build": "cd packages/sea-lion-client && npm run build",
+    "link": "cd packages/sea-lion-client && sudo npm link"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.33.0",

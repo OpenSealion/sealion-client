@@ -1,13 +1,13 @@
 {
-  "name": "mm-template",
-  "version": "0.6.7",
+  "name": "@sea-lion/app-template",
+  "version": "0.1.0",
   "publishConfig": {
-    "registry": "http://nexus.openxlab.org.cn/repository/npm-hosted"
+    "registry": "https://registry.npmjs.org/"
   },
   "repository": {
     "type": "http",
-    "url": "http://10.1.32.6/openmmlab/common/fe/mm-cli.git",
-    "directory": "packages/mm-template"
+    "url": "http://gitlab.openxlab.org.cn/infrastructure/fe/sea-lion-client.git",
+    "directory": "packages/app-template"
   },
   "scripts": {
     "start": "node scripts/dev.js",
@@ -28,6 +28,5 @@
     "fs-extra": "^10.1.0",
     "tar-pack": "^3.4.1"
   },
-  "description": "",
-  "gitHead": "a274c88041299b7d35564343250ebfca860ae543"
+  "description": ""
 }
