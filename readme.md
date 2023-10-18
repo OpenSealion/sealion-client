@@ -23,13 +23,14 @@ node packages/create-mm-app/bin/create-mm-app.js create [project-name]
 ### 新模板
 <p>1. 新模板开发需要开发者在本地开发好需要的项目环境，然后按照上面的现有模板的对应关系copy过去</p>
 <p>2. 除此之外，还要提供一套方法供cli使用，可以参照xxx-template/scripts下的文件,并通过xxx-template/index.js和xxx-template/package.json导出</p>
-<p>3. 更新cli中的package.json依赖，和create-mm-app/src/commands/create.ts中的代码，如下</p>
+<p>3. 更新cli中的package.json依赖，和sea-lion-client/src/template.config.ts中的代码，如下</p>
 
 ``` javascript
 // 默认为普通项目模板
-const TemplateTypeMap = {
-    normal: 'mm-template',
-    lib: 'mm-lib-template'
+export const TemplateTypeMap = {
+    normal: '@sea-lion/app-template',
+    lib: '@sea-lion/app-vite-template',
+    vite: '@sea-lion/lib-template'
 };
 ```
 <p>上面map维护了所有cli依赖的模板，也就是可供用户选择的模板，key值任意，value值对应模板的名字，注意，必须和package.json中的name一致</p>

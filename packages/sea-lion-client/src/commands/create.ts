@@ -1,4 +1,5 @@
 import { Command } from 'commander';
+import { TemplateTypeMap } from '../template.config';
 const inquirer = require('inquirer');
 const spawn = require('cross-spawn');
 const fs = require('fs');
@@ -8,13 +9,6 @@ const chalk = require('chalk');
 const shell = require('shelljs');
 const { tryGitInit, tryGitCommit } = require('../utils/createGitRepo');
 const { handlePrivateFileCopy } = require('../utils/create');
-
-// 默认为普通项目模板
-const TemplateTypeMap = {
-    normal: '@sea-lion/app-template',
-    lib: '@sea-lion/app-vite-template',
-    vite: '@sea-lion/lib-template'
-};
 
 /**
  * @param {string} appName
