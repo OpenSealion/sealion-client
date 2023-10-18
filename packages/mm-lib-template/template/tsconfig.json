@@ -1,0 +1,38 @@
+{
+    "compilerOptions": {
+        "target": "ES2015",
+        "lib": [
+            "DOM",
+            "ES2015"
+        ],
+        "sourceMap": true,
+        "jsx": "react-jsx",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "module": "ESNext",
+        "rootDir": ".",
+        "moduleResolution": "node",
+        // "declaration": true,
+        // "declarationDir": "./dist/types/",
+        // "declarationMap": false,
+        "baseUrl": ".",
+        "paths": {
+            "@/*": [
+                "src/*"
+            ]
+        },
+        "resolveJsonModule": true,
+        "allowJs": true,
+        "outDir": "./dist",
+        "removeComments": true,
+        "isolatedModules": true,
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "strict": false,
+        "skipLibCheck": true
+    },
+    "include": [
+        "src/"
+    ]
+}

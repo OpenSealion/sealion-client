@@ -1,0 +1,72 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: _CI_PROJECT_NAME-deploy
+  namespace: _namespace
+spec:
+  selector:
+    matchLabels:
+      app: _CI_PROJECT_NAME
+  replicas: _replicas
+  template:
+    metadata:
+      labels:
+        app: _CI_PROJECT_NAME
+    spec:
+      nodeSelector:
+        workfor: biz
+      containers:
+        - name: _CI_PROJECT_NAME
+          image: 10.1.32.6:28080/_project/_CI_PROJECT_NAME:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
+          resources:
+            requests:
+              cpu: 50m
+              memory: 500Mi
+            limits:
+              cpu: 1
+              memory: 1000Mi
+          env:
+            - name: env
+              value: 'dev'
+      imagePullSecrets:
+        - name: harbor-registry-key
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: _CI_PROJECT_NAME-service
+  namespace: _namespace
+spec:
+  type: ClusterIP
+  selector:
+    app: _CI_PROJECT_NAME
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: _CI_PROJECT_NAME-ingress
+  namespace: _namespace
+  annotations:
+    kubernetes.io/ingress.class: 'nginx'
+spec:
+  rules:
+    - host: _host
+      http:
+        paths:
+          - backend:
+              service:
+                name: _CI_PROJECT_NAME-service
+                port:
+                  number: 80
+            pathType: Prefix
+            path: /
+

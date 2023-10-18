@@ -1,0 +1,25 @@
+{
+  "name": "root",
+  "workspaces": [
+    "packages/*"
+  ],
+  "publishConfig": {
+    "registry": "http://nexus.openxlab.org.cn/repository/npm-all"
+  },
+  "scripts": {
+    "dev": "cd packages/create-mm-app && npm run dev",
+    "build": "cd packages/create-mm-app && npm run build",
+    "link": "cd packages/create-mm-app && sudo npm link"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.33.0",
+    "@typescript-eslint/parser": "^5.33.0",
+    "eslint": "^8.21.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.4",
+    "eslint-plugin-promise": "^6.0.0",
+    "husky": "^8.0.1",
+    "lerna": "^4.0.0"
+  }
+}

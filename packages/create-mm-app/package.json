@@ -1,0 +1,55 @@
+{
+  "name": "create-mm-app",
+  "version": "0.9.3",
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "http://nexus.openxlab.org.cn/repository/npm-hosted"
+  },
+  "repository": {
+    "type": "http",
+    "url": "http://10.1.32.6/openmmlab/common/fe/mm-cli.git",
+    "directory": "packages/create-mm-app"
+  },
+  "description": "",
+  "main": "./bin/create-mm-app.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts && npm run copy-template",
+    "eslint": "eslint --fix src --ext .ts --max-warnings=0",
+    "build": "rm -rf lib && tsc --build && npm run copy-template",
+    "copy-template": "cp -r src/template lib/template"
+  },
+  "bin": {
+    "create-mm-app": "./bin/create-mm-app.js"
+  },
+  "files": [
+    "lib",
+    "bin"
+  ],
+  "keywords": [],
+  "author": "duxiaoqing",
+  "devDependencies": {
+    "@types/node": "^18.7.3",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "clear-console": "^1.1.0",
+    "commander": "^9.4.0",
+    "cross-spawn": "^7.0.3",
+    "figlet": "^1.5.2",
+    "fs-extra": "^10.1.0",
+    "git-clone": "^0.2.0",
+    "handlebars": "^4.7.8",
+    "inquirer": "^6.0.0",
+    "js-yaml": "^4.1.0",
+    "mm-lib-template": "^0.3.12",
+    "mm-template": "^0.6.7",
+    "mm-template-vite": "^0.3.3",
+    "ora": "^6.1.2",
+    "request": "^2.88.2",
+    "shelljs": "^0.8.5",
+    "tar-pack": "^3.4.1",
+    "tmp": "^0.2.1"
+  }
+}

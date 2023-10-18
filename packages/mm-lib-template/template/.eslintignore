@@ -1,0 +1,8 @@
+node_modules
+dist
+build
+.umi
+*.d.ts
+lib
+*.test.ts
+*.test.js

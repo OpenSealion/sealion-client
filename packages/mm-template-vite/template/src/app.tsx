@@ -1,0 +1,19 @@
+import { GlobalLang } from '@components/global-lang';
+import Auth from '@components/auth/auth';
+import RouterRoot from './routes';
+import './styles/index.less';
+import 'sea-lion-ui/dist/index.css';
+
+console.log(import.meta.env.VITE_NODE);
+
+const App = () => {
+    return (
+        <GlobalLang>
+            <Auth>
+                <RouterRoot />
+            </Auth>
+        </GlobalLang>
+    );
+};
+
+export default App;

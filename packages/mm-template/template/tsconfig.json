@@ -1,0 +1,76 @@
+{
+  "compilerOptions": {
+    "target": "ES2015",
+    "lib": [
+      "DOM",
+      "ES2015"
+    ],
+    "sourceMap": true,
+    "jsx": "react-jsx",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "module": "ESNext",
+    "rootDir": ".",
+    "moduleResolution": "node",
+    // "declaration": true,
+    // "declarationDir": "./dist/types/",
+    // "declarationMap": false,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ],
+      "@components/*": [
+        "src/components/*"
+      ],
+      "@layouts/*": [
+        "src/layouts/*"
+      ],
+      "@asserts/*": [
+        "src/asserts/*"
+      ],
+      "@pages/*": [
+        "src/pages/*"
+      ],
+      "@services/*": [
+        "src/services/*"
+      ],
+      "@utils/*": [
+        "src/utils/*"
+      ],
+      "@styles/*": [
+        "src/styles/*"
+      ],
+      "@routes/*": [
+        "src/routes/*"
+      ],
+      "@config/*": [
+        "src/config/*"
+      ],
+      "@locales/*": [
+        "src/locales/*"
+      ],
+      "@interceptors/*": [
+        "src/interceptors/*"
+      ],
+      "@hooks/*": [
+        "src/hooks/*"
+      ],
+      "@constants/*": [
+        "src/constants/*"
+      ]
+    },
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "outDir": "./dist",
+    "removeComments": true,
+    "isolatedModules": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true
+  },
+  "include": [
+    "src/"
+  ]
+}

@@ -1,0 +1,2 @@
+# 改变远程仓库地址
+registry=http://10.140.52.166:18081/repository/npm-all

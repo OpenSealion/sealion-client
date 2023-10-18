@@ -1,0 +1,7 @@
+variables:
+  SERVICE_NAME: project-name-fe
+  PROJECT: ai_open_platform
+
+include:
+  - project: devops/ci-templates
+    file: /templates/combine-biz-fe.yml

@@ -1,0 +1,32 @@
+{
+  "name": "mm-template-vite",
+  "version": "0.3.3",
+  "publishConfig": {
+    "registry": "http://nexus.openxlab.org.cn/repository/npm-hosted"
+  },
+  "repository": {
+    "type": "http",
+    "url": "http://10.1.32.6/openmmlab/common/fe/mm-cli.git",
+    "directory": "packages/mm-template-vite"
+  },
+  "scripts": {
+    "start": "node scripts/dev.js",
+    "create": "node scripts/create.js",
+    "remove": "node scripts/remove.js"
+  },
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "files": [
+    "template",
+    "template.json",
+    "template.tar.gz",
+    "scripts"
+  ],
+  "dependencies": {
+    "fs-extra": "^10.1.0",
+    "tar-pack": "^3.4.1"
+  },
+  "description": ""
+}
