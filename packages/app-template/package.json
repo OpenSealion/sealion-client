@@ -1,5 +1,6 @@
 {
   "name": "@sea-lion/app-template",
+  "private": false,
   "version": "0.1.1",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
@@ -28,5 +29,6 @@
     "fs-extra": "^10.1.0",
     "tar-pack": "^3.4.1"
   },
-  "description": ""
+  "description": "",
+  "gitHead": "3c2cd268283f38c3e9cf50eeccf87a08d6a70527"
 }
