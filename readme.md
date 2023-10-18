@@ -37,7 +37,10 @@ export const TemplateTypeMap = {
 <p>4. 进入sea-lion-client目录执行npm run build即可</p>
 
 ## 关于发布
-lerna publish
+```sh
+> npm config set access public # scope package need
+> lerna publish
+```
 
 ## 使用文档
 [sea-lion-client使用文档](https://aicarrier.feishu.cn/docx/doxcnhycCgdhqozV7yl1LIJdclc)
