@@ -73,7 +73,6 @@ const prompt = () => {
 
 export const start = (appName, options) => {
     const { template } = options;
-    console.log(template, Object.values(TemplateTypeMap).indexOf(template) > -1);
     // 展示欢迎信息
     if (
         template &&
