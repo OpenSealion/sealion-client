@@ -1,5 +1,6 @@
 {
   "name": "sea-lion-client",
+  "keywords": ["sea lion", "sea-lion-client", "vite", "webpack", "cli"],
   "private": false,
   "version": "0.1.5",
   "license": "MIT",
@@ -27,7 +28,6 @@
     "lib",
     "bin"
   ],
-  "keywords": [],
   "author": "jsweber",
   "devDependencies": {
     "@types/node": "^18.7.3",
