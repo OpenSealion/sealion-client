@@ -1,8 +1,14 @@
 {
   "name": "sea-lion-client",
-  "keywords": ["sea lion", "sea-lion-client", "vite", "webpack", "cli"],
+  "keywords": [
+    "sea lion",
+    "sea-lion-client",
+    "vite",
+    "webpack",
+    "cli"
+  ],
   "private": false,
-  "version": "0.1.5",
+  "version": "0.1.6",
   "license": "MIT",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
