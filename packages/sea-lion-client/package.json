@@ -1,5 +1,5 @@
 {
-  "name": "sea-lion-client-tool",
+  "name": "sea-lion-client",
   "version": "0.1.0",
   "license": "MIT",
   "publishConfig": {
@@ -34,6 +34,9 @@
     "typescript": "^4.7.4"
   },
   "dependencies": {
+    "@sea-lion/app-template": "^0.1.0",
+    "@sea-lion/app-vite-template": "^0.1.0",
+    "@sea-lion/lib-template": "^0.1.0",
     "chalk": "^4.0.0",
     "clear-console": "^1.1.0",
     "commander": "^9.4.0",

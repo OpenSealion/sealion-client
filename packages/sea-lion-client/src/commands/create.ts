@@ -11,9 +11,9 @@ const { handlePrivateFileCopy } = require('../utils/create');
 
 // 默认为普通项目模板
 const TemplateTypeMap = {
-    normal: 'mm-template',
-    lib: 'mm-lib-template',
-    vite: 'mm-template-vite'
+    normal: '@sea-lion/app-template',
+    lib: '@sea-lion/app-vite-template',
+    vite: '@sea-lion/lib-template'
 };
 
 /**
