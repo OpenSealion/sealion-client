@@ -1,13 +1,22 @@
 {
   "name": "@sea-lion/app-template",
   "private": false,
+  "keywords": [
+    "app-template",
+    "sealion",
+    "sea lion",
+    "sea-lion-client",
+    "vite",
+    "webpack",
+    "cli"
+  ],
   "version": "0.1.3",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
   "repository": {
     "type": "http",
-    "url": "http://gitlab.openxlab.org.cn/infrastructure/fe/sea-lion-client.git",
+    "url": "https://github.com/opensealion/Sealion-CLI-React",
     "directory": "packages/app-template"
   },
   "scripts": {
@@ -16,7 +25,6 @@
     "remove": "node scripts/remove.js"
   },
   "main": "index.js",
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "files": [

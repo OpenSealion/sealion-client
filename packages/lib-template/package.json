@@ -7,16 +7,24 @@
   },
   "repository": {
     "type": "http",
-    "url": "http://gitlab.openxlab.org.cn/infrastructure/fe/sea-lion-client.git",
+    "url": "https://github.com/opensealion/Sealion-CLI-React",
     "directory": "packages/lib-template"
   },
+  "keywords": [
+    "lib-template",
+    "sealion",
+    "sea lion",
+    "sea-lion-client",
+    "vite",
+    "webpack",
+    "cli"
+  ],
   "scripts": {
     "start": "node scripts/dev.js",
     "create": "node scripts/create.js",
     "remove": "node scripts/remove.js"
   },
   "main": "index.js",
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "files": [
