@@ -43,17 +43,17 @@ slc deploy init -fn
         <td>其它</td>
     </tr>
     <tr>
-        <td>@sea-lion/app-vite-template</td>
+        <td><a href="https://www.npmjs.com/package/@sea-lion/app-template" target="_blank">@sea-lion/app-vite-template</a></td>
         <td>使用vite构建的项目开发环境</td>
         <td>创建项目推荐使用</td>
     </tr>
     <tr>
-        <td>@sea-lion/lib-template</td>
+        <td><a href="https://www.npmjs.com/package/@sea-lion/app-template" target="_blank">@sea-lion/lib-template</a></td>
         <td>使用rollup构建的库开发环境</td>
         <td></td>
     </tr>
     <tr>
-        <td>@sea-lion/app-template</td>
+        <td><a href="https://www.npmjs.com/package/@sea-lion/app-template" target="_blank">@sea-lion/app-template</a></td>
         <td>使用webpack5构建的项目开发环境</td>
         <td>可能会有依赖包版本冲突，不推荐</td>
     </tr>

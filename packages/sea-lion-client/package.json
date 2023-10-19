@@ -1,6 +1,7 @@
 {
   "name": "sea-lion-client",
   "keywords": [
+    "sealion",
     "sea lion",
     "sea-lion-client",
     "vite",
@@ -15,7 +16,7 @@
   },
   "repository": {
     "type": "http",
-    "url": "http://gitlab.openxlab.org.cn/infrastructure/fe/sea-lion-client.git",
+    "url": "https://github.com/opensealion/Sealion-CLI-React",
     "directory": "packages/sea-lion-client"
   },
   "description": "sea-lion-client tool",

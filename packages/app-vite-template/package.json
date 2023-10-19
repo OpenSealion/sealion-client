@@ -2,13 +2,22 @@
   "name": "@sea-lion/app-vite-template",
   "private": false,
   "version": "0.1.4",
+  "keywords": [
+    "app-vite-template",
+    "sealion",
+    "sea lion",
+    "sea-lion-client",
+    "vite",
+    "webpack",
+    "cli"
+  ],
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
   "repository": {
     "type": "http",
-    "url": "http://gitlab.openxlab.org.cn/infrastructure/fe/sea-lion-client.git",
-    "directory": "packages/app-vite-vite"
+    "url": "https://github.com/opensealion/Sealion-CLI-React",
+    "directory": "packages/app-vite-template"
   },
   "scripts": {
     "start": "node scripts/dev.js",
@@ -16,7 +25,6 @@
     "remove": "node scripts/remove.js"
   },
   "main": "index.js",
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "files": [
