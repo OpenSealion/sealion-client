@@ -1,7 +1,13 @@
 ## 介绍
 <p>前端物料构建工具，支持构建项目、组件和ci/cd配置文件,该项目由一个构建工具和四个模板组成。</p>
 
-## 命令
+## 安装
+```sh
+# mac和ubuntu需要加sudo
+npm install -g sea-lion-client
+```
+
+## 功能
 ```sh
 # 查看版本0.1.4
 slc -v
@@ -40,7 +46,7 @@ slc deploy init -fn
     <tr>
         <td>模板名(即包名)</td>
         <td>功能</td>
-        <td>其它</td>
+        <td>备注</td>
     </tr>
     <tr>
         <td><a href="https://www.npmjs.com/package/@sea-lion/app-template" target="_blank">@sea-lion/app-vite-template</a></td>
@@ -60,3 +66,6 @@ slc deploy init -fn
    </tbody> 
 </table>
 
+# 其它
+
+当使用slc创建物料和项目时，slc首先会先对当前目录下的文件做检查，是否有重名文件，如果有就不会创建，避免覆盖。
