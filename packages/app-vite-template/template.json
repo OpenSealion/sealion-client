@@ -30,7 +30,7 @@
     "react-dom": "^18.2.0",
     "react-intl": "^6.4.4",
     "react-router-dom": "^6.13.0",
-    "sea-lion-ui": "^1.0.36"
+    "sea-lion-ui": "latest"
   },
   "devDependencies": {
     "@types/node": "^20.3.1",
