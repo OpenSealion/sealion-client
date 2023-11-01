@@ -1,4 +1,6 @@
-import { useState, useEffect, FC, ReactNode, memo } from 'react';
+import {
+    useState, useEffect, FC, ReactNode, memo
+} from 'react';
 import { DataPoolContext, DefaultData } from './data-pool-context';
 import { fetchMetaData, addRandomQuery } from './utils';
 
@@ -8,8 +10,8 @@ export interface DataPoolProps {
 }
 
 const DataPool: FC<DataPoolProps> = ({ URLList, children }) => {
-    const [ loading, setLoading ] = useState(false);
-    const [ data, setData ] = useState(DefaultData);
+    const [loading, setLoading] = useState(false);
+    const [data, setData] = useState(DefaultData);
 
     useEffect(() => {
         const initMetaData = () => {
@@ -26,9 +28,9 @@ const DataPool: FC<DataPoolProps> = ({ URLList, children }) => {
                                 resp
                             });
                         }).catch(err => {
-                            reject(err)
-                        })
-                })
+                            reject(err);
+                        });
+                });
             });
 
             Promise.all(fetchTaskList)
@@ -42,7 +44,7 @@ const DataPool: FC<DataPoolProps> = ({ URLList, children }) => {
                 }).finally(() => {
                     setLoading(true);
                 });
-        }
+        };
 
         initMetaData();
     }, [URLList]);
@@ -52,7 +54,7 @@ const DataPool: FC<DataPoolProps> = ({ URLList, children }) => {
             { loading && children }
         </DataPoolContext.Provider>
     );
-}
+};
 
 export default memo(DataPool, (oldProps, newProps) => {
     const oldUrlStr = oldProps.URLList.join();
