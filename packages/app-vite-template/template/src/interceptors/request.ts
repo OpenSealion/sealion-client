@@ -1,4 +1,4 @@
-import { NoTokenApiPaths } from '@config/auth';
+import { NoTokenApiPaths, openOSS } from '@config/auth';
 import { getLang, Token } from '@utils/utils';
 import { AxiosRequestHeaders } from 'axios';
 
@@ -17,7 +17,10 @@ const validateAuthInterceptor = config => {
         ...config.headers
     };
 
-    if (!NoTokenApiPaths.find(p => (config.url || '').endsWith(p))) {
+    if (
+        !NoTokenApiPaths.find(p => (config.url || '').endsWith(p))
+        && openOSS
+    ) {
         headers.Authorization = `Bearer ${token}`;
     }
 
