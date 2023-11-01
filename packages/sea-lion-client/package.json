@@ -9,7 +9,7 @@
     "cli"
   ],
   "private": false,
-  "version": "0.1.9",
+  "version": "0.1.10",
   "license": "MIT",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
@@ -43,7 +43,7 @@
   },
   "dependencies": {
     "@sea-lion/app-template": "^0.1.4",
-    "@sea-lion/app-vite-template": "^0.1.6",
+    "@sea-lion/app-vite-template": "^0.1.7",
     "@sea-lion/lib-template": "^0.1.4",
     "chalk": "^4.0.0",
     "clear-console": "^1.1.0",
