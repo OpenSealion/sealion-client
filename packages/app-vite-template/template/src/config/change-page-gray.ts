@@ -80,7 +80,8 @@ const changePageGray = ({
 const main = async () => {
     try {
         const content = await getMetaData(MetaDataURL);
-        changePageGray(content);
+        const options = (content || {}).grayPage;
+        changePageGray(options);
     } catch (error) {
         console.error(error);
     }
