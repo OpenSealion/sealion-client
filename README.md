@@ -68,22 +68,24 @@ slc deploy init -fn
    </tbody> 
 </table>
 
-# 其它
+# 4.其它
 当使用slc创建物料和项目时，slc首先会先对当前目录下的文件做检查，是否有重名文件，如果有就不会创建，避免覆盖。
 
-## 说明
-本项目存放脚手架工具和全套模板的代码
-
+# 5.开发
 ## 开发规范
-开发前请创建自己的功能分支，合并请提mr
+<div>本项目存放脚手架工具和全套模板的代码，</div>
+<div>开发前请创建自己的功能分支，合并请提mr。</div>
 
 ## 项目依赖安装
+```sh
 lerna bootstrap
+```
 
 ## 本地运行
 node packages/sea-lion-client/bin/sea-lion-client.js create [project-name]
 
 ## 关于开发
+
 ### 现有模板维护
 <p>由于cli项目使用单一库维护，所以模板和cli工具在一个git项目中维护</p>
 <p>对于模板开发，目前的最佳实践是在本地用需要修改的模板创建一个项目，等项目修改完成后，再把代码copy到对应的脚手架代码</p>
@@ -92,6 +94,7 @@ node packages/sea-lion-client/bin/sea-lion-client.js create [project-name]
 <p>项目中的.gitignore和.npmrc对于xxx-template/template/gitignore和xxx-template/template/npmrc</p>
 <p>其他的暂时都一一对应</p>
 <p></p>
+
 
 ### 新模板
 <p>1. 新模板开发需要开发者在本地开发好需要的项目环境，然后按照上面的现有模板的对应关系copy过去</p>
@@ -114,10 +117,3 @@ export const TemplateTypeMap = {
 > npm config set access public # scope package need
 > lerna publish
 ```
-
-## 使用文档
-[sea-lion-client使用文档](https://aicarrier.feishu.cn/docx/doxcnhycCgdhqozV7yl1LIJdclc)
-
-## 遗留功能
-1. 优化维护成本
-2. cicd还没配，目前发布需要手动执行命令
