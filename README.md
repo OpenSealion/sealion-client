@@ -1,13 +1,44 @@
+<div align="center"><a name="readme-top"></a>
+<img src="./doc/imgs/logo.svg" width="20%" alt="logo" />
+<h1>Sea Lion Client</h1>
 
-# 1.介绍
-<p>前端物料构建工具，支持构建项目、组件和ci/cd配置文件,该项目由一个构建工具和四个模板组成。</p>
+创建 React app的代码构建工具。
 
-# 2.命令行工具
-## 安装
+<div>
+<img alt="Static Badge" src="https://img.shields.io/badge/v16%2B-white?style=flat&label=nodejs&labelColor=%2389c732&color=white">
+<img alt="Static Badge" src="https://img.shields.io/badge/sea%20lion%20ui-green?style=flat&label=ui%20component">
+<img alt="Static Badge" src="https://img.shields.io/badge/weclome-green?style=flat&label=PRs">
+<img alt="Static Badge" src="https://img.shields.io/badge/8.19.4-red?style=flat&label=npm&labelColor=black">
+</div>
+</div>
+
+# 快速使用
+### 创建项目
+```sh
+slc create my-app
+cd my-app
+npm run dev
+
+```
+
+### 创建React组件
+```sh
+slc g -c my-component
+```
+
+
+# 特性
+- 创建React app项目
+- 创建React component
+- 创建CI/CD配置文件
+
+# 安装
 ```sh
 # mac和ubuntu需要加sudo
 npm install -g sea-lion-client
 ```
+
+
 
 ## 功能
 ```sh
