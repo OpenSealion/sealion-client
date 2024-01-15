@@ -1,5 +1,5 @@
 <div align="center"><a name="readme-top"></a>
-<img src="./doc/imgs/logo.svg" width="20%" alt="logo" />
+<img src="./doc/imgs/logo.svg" width="60%" alt="logo" />
 <h1>Sea Lion Client</h1>
 
 React app构建工具。
@@ -20,7 +20,7 @@ cd my-app
 npm run dev
 
 ```
-<img src="./doc/imgs/create-my-app.gif" width="20%" alt="logo" />
+<img src="./doc/imgs/create-my-app.gif" alt="logo" />
 <div>
 打开 <code>http://localhost:5173</code> 查看。<br/>
 当你准备部署到生产环境时，执行<code>npm run build</code>生成压缩的bundle。
@@ -123,7 +123,7 @@ slc create my-app -t @sea-lion/app-vite-template
 cd ./src/components
 slc g -c my-component
 ```
-<img src="./doc/imgs/create-component.gif" width="20%" alt="logo" />
+<img src="./doc/imgs/create-component.gif" alt="logo" />
 
 <br/>
 当使用slc创建物料和项目时，slc首先会在当前目录下进行重名文件效验，避免覆盖。
