@@ -1,8 +1,7 @@
 <div align="center"><a name="readme-top"></a>
 <img src="./doc/imgs/logo.svg" width="60%" alt="logo" />
-<h1>Sea Lion Client</h1>
 
-React app构建工具。
+<h2>Sea Lion Client，React app构建工具。</h2>
 
 <div>
 <img alt="Static Badge" src="https://img.shields.io/badge/v16%2B-white?style=flat&label=nodejs&labelColor=%2389c732&color=white">
@@ -14,6 +13,7 @@ React app构建工具。
 
 # 快速使用
 ### 创建项目
+
 ```sh
 slc create my-app
 cd my-app
@@ -124,12 +124,25 @@ cd ./src/components
 slc g -c my-component
 ```
 <img src="./doc/imgs/create-component.gif" alt="logo" />
-
 <br/>
 当使用slc创建物料和项目时，slc首先会在当前目录下进行重名文件效验，避免覆盖。
-<br/>
+<br/><br/>
 
 ## 查看版本
 ```sh
 slc -v
+```
+<br/>
+
+# 开发
+
+安装依赖
+```
+lerna bootstrap
+```
+<br/>
+
+本地运行
+```sh
+node packages/sea-lion-client/bin/sea-lion-client.js create [app-name]
 ```
