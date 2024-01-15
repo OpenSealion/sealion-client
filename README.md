@@ -1,8 +1,7 @@
 <div align="center"><a name="readme-top"></a>
 <img src="./doc/imgs/logo.svg" width="60%" alt="logo" />
 
-<h1>Sea Lion Client</h1>
-<h3>支持构建多种React app的前端工具包</h3>
+<h3>SeaLion Client是一款构建前端项目和代码的工具包</h3>
 <br/>
 <div>
 <img alt="Static Badge" src="https://img.shields.io/badge/v16%2B-white?style=flat&label=nodejs&labelColor=%2389c732&color=white">
