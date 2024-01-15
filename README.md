@@ -1,8 +1,9 @@
 <div align="center"><a name="readme-top"></a>
 <img src="./doc/imgs/logo.svg" width="60%" alt="logo" />
 
-<h2>Sea Lion Client，React app构建工具。</h2>
-
+<h1>Sea Lion Client</h1>
+<h3>支持构建多种React app的前端工具包</h3>
+<br/>
 <div>
 <img alt="Static Badge" src="https://img.shields.io/badge/v16%2B-white?style=flat&label=nodejs&labelColor=%2389c732&color=white">
 <img alt="Static Badge" src="https://img.shields.io/badge/sea%20lion%20ui-green?style=flat&label=ui%20component">
@@ -31,12 +32,14 @@ npm run dev
 ```sh
 slc g -c my-component
 ```
-执行后会在当前目录下创建my-component组件<br/>
+<img src="./doc/imgs/create-component.gif" alt="logo" />
+<br/>
+执行后会在当前目录下创建my-component组件<br/><br/>
 
 # 特性
 - 模板技术栈：react + typescript + less；
 - 可以选择vite或者webpack做为打包工具；
-- 可以通过命令创建物料。
+- 可以快速创建基础组件物料。
 
 # 安装
 ```sh
@@ -123,7 +126,6 @@ slc create my-app -t @sea-lion/app-vite-template
 cd ./src/components
 slc g -c my-component
 ```
-<img src="./doc/imgs/create-component.gif" alt="logo" />
 <br/>
 当使用slc创建物料和项目时，slc首先会在当前目录下进行重名文件效验，避免覆盖。
 <br/><br/>
