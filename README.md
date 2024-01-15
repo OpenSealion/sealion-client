@@ -1,5 +1,5 @@
 <div align="center"><a name="readme-top"></a>
-<img src="./doc/imgs/logo.svg" width="60%" alt="logo" />
+<img src="./doc/imgs/logo.png" width="60%" alt="logo" />
 
 <h3>SeaLion Client是一款构建前端项目和代码的工具包</h3>
 <br/>
