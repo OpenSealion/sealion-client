@@ -128,7 +128,7 @@ slc g -c my-component
 <br/>
 生成物如下图所示，当使用slc创建物料和项目时，slc首先会在当前目录下进行重名文件效验，避免覆盖。
 <br/>
-<img src="./doc/imgs/my-component.jpg" width="80%" />
+<img src="./doc/imgs/my-component.jpg" />
 <br/>
 <br/>
 <br/>
