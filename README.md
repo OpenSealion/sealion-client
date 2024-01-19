@@ -11,7 +11,10 @@
 </div>
 </div>
 
+[English](https://github.com/OpenSealion/sealion-client/blob/develop/README-zh_EN.md)· 简体中文
+
 # 快速使用
+
 ### 创建项目
 
 ```sh
