@@ -52,8 +52,11 @@ const inBuildHandleMetaResponseInterceptors = (response) => {
     };
 };
 
-const inBuildHandleMetaErrorInterceptors = (error:AxiosError) => {
-    const { response } = error;
+const inBuildHandleMetaErrorInterceptors = (error: AxiosError | Error) => {
+    if (error.name === 'CanceledError') {
+        return error;
+    }
+    const { response } = error as AxiosError;
     return {
         ...error,
         __meta: getMeta(response.config.url)
@@ -109,6 +112,36 @@ export const request = <T>(api: string, options: any = {}, prefix = ApiPrefix) =
         delete options.meta;
     }
     return ajax<T>(fullApi, options);
+};
+
+export const requestWidthCancel = <T>(
+    api: string,
+    options: any = {},
+    prefix = ApiPrefix
+): { requestPromise: Promise<T>, controller: AbortController } => {
+    const abortControler = new AbortController();
+
+    const optionsWithAbort = {
+        ...options,
+        signal: abortControler.signal
+    };
+
+    let requestPromise = null;
+
+    try {
+        requestPromise = request<T>(api, optionsWithAbort, prefix);
+    } catch (e) {
+        if (e.name === 'AbortError') {
+            console.log(`cancel api ${api}`);
+        } else {
+            throw e;
+        }
+    }
+
+    return {
+        requestPromise,
+        controller: abortControler
+    };
 };
 
 export default ajax;

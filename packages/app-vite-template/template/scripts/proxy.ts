@@ -2,8 +2,9 @@
 const ProxyConfig = {
     '/mock': {
         target: 'http://localhost:3000',
-        pathRewrite: {
-            '^/mock': ''
+        rewrite: path => {
+            console.log(path);
+            return path.replace(/^\/mock/, '');
         },
         secure: false // 开启https
     },

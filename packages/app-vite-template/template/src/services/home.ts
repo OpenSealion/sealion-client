@@ -1,4 +1,4 @@
-import { request } from '@/utils/ajax';
+import { request, requestWidthCancel } from '@/utils/ajax';
 
 export async function fetchMockData() {
     return request('/mock/data', {
@@ -7,7 +7,15 @@ export async function fetchMockData() {
 }
 
 export async function fetchEvaluateList() {
-    return request('/api/v1/commit/getCommitHistory', {
+    return request('/mock/comments', {
         method: 'POST',
-    }, '/gw/opencompass-be');
+    });
 }
+
+export const fetchComments = () => {
+    return requestWidthCancel('/mock/posts', {
+        meta: {
+            isAllResponseBody: true
+        },
+    });
+};

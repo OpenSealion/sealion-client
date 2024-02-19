@@ -1,9 +1,30 @@
 import { useNavigate } from 'react-router-dom';
 import { Button } from 'sea-lion-ui';
+import { useEffect } from 'react';
+import { fetchComments } from '@services/home';
 import styles from './home.module.less';
 
 const Home = () => {
     const navigate = useNavigate();
+
+    useEffect(() => {
+        let abort = () => undefined;
+        const start = async () => {
+            try {
+                const { requestPromise, controller } = fetchComments();
+                const response = await requestPromise;
+                console.log(response);
+                abort = controller.abort;
+            } catch (error) {
+                console.log(error);
+            }
+        };
+
+        start();
+        return () => {
+            abort();
+        };
+    }, []);
 
     return (
         <div className={styles.home}>
