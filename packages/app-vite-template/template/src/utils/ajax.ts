@@ -118,7 +118,7 @@ export const requestWidthCancel = <T>(
     api: string,
     options: any = {},
     prefix = ApiPrefix
-): { requestPromise: Promise<T>, controller: AbortController } => {
+): { requestPromise: Promise<T>, cancel: () => void } => {
     const abortControler = new AbortController();
 
     const optionsWithAbort = {
@@ -140,7 +140,7 @@ export const requestWidthCancel = <T>(
 
     return {
         requestPromise,
-        controller: abortControler
+        cancel: () => abortControler.abort()
     };
 };
 
