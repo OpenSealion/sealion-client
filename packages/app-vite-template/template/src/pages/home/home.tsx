@@ -11,10 +11,10 @@ const Home = () => {
         let abort = () => undefined;
         const start = async () => {
             try {
-                const { requestPromise, controller } = fetchComments();
+                const { requestPromise, cancel } = fetchComments();
                 const response = await requestPromise;
                 console.log(response);
-                abort = controller.abort;
+                abort = cancel;
             } catch (error) {
                 console.log(error);
             }
@@ -22,7 +22,7 @@ const Home = () => {
 
         start();
         return () => {
-            abort();
+            abort?.();
         };
     }, []);
 

@@ -7,13 +7,11 @@ export async function fetchMockData() {
 }
 
 export async function fetchEvaluateList() {
-    return request('/mock/comments', {
-        method: 'POST',
-    });
+    return request('/mock/comments');
 }
 
 export const fetchComments = () => {
-    return requestWidthCancel('/mock/posts', {
+    return requestWidthCancel('/mock/comments', {
         meta: {
             isAllResponseBody: true
         },
