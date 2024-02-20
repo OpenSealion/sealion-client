@@ -87,7 +87,7 @@ const handleErrorData = (error) => {
 
 export const responsetInterceptors = [validateAuth, validateInvitation, handleErrorAlert, formatResponseData];
 
-type ResponsetErrorInterceptorsError = AxiosError & { __meta: Meta }
+type ResponsetErrorInterceptorsError = AxiosError & { __meta: Meta } | Error;
 
 export const responsetErrorInterceptors: [
     ...(<T extends ResponsetErrorInterceptorsError>(error: T) => ResponsetErrorInterceptorsError)[], (error: ResponsetErrorInterceptorsError) => Promise<AxiosError>
