@@ -62,6 +62,6 @@
     "allowJs": true,
     "outDir": "./dist",
   },
-  "include": ["src"],
+  "include": ["src/**/*"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
