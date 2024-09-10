@@ -13,6 +13,7 @@
     "ls-lint": "ls-lint",
     "postinithook": "husky add .husky/pre-commit \"npx lint-staged\"",
     "inithook": "husky install",
+    "postinstall": "husky install",
     "preview": "npm run build:aliyun-prod && vite preview",
     "mock": "json-server --watch mock/db.json"
   },

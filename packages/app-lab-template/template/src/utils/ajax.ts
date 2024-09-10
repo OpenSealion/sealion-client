@@ -37,7 +37,6 @@ export interface Meta {
 }
 
 const getMeta = (url) => {
-    console.log(url);
     let meta: Meta = {};
     const key = url.toLowerCase();
     if (MetaDataMap.has(key)) {
