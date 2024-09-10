@@ -103,9 +103,14 @@ slc create my-app -t @sea-lion/app-vite-template
         <td>备注</td>
     </tr>
     <tr>
+        <td><a href="https://www.npmjs.com/package/@sea-lion/app-lab-template" target="_blank">@sea-lion/app-lab-template</a></td>
+        <td>使用vite构建的项目开发环境</td>
+        <td>默认模版，带有定制的前端规范和前端监控</td>
+    </tr>
+    <tr>
         <td><a href="https://www.npmjs.com/package/@sea-lion/app-template" target="_blank">@sea-lion/app-vite-template</a></td>
         <td>使用vite构建的项目开发环境</td>
-        <td>默认模板，推荐使用</td>
+        <td>推荐使用</td>
     </tr>
     <tr>
         <td><a href="https://www.npmjs.com/package/@sea-lion/app-template" target="_blank">@sea-lion/lib-template</a></td>
