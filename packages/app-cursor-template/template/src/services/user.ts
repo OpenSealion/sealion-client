@@ -17,38 +17,28 @@ export interface fetchCurrentUserReqDto {
     [key: string]: any;
 }
 
-// 获取用户信息
-export async function fetchCurrentUser(
-    token: string,
-) {
-    return request<fetchCurrentUserReqDto>('/api/v1/login/getUserInfo', {
-        method: 'POST',
-        headers: {
-            Authorization: `Bearer ${token}`,
-        },
-    }, uaaServicePrefix);
+// 模拟的用户信息获取函数
+export async function fetchCurrentUser() {
+    // 返回一个模拟的用户信息
+    return {
+        avatar: '',
+        email: 'demo@example.com',
+        roleIds: [],
+        ssoUid: 'demo-user',
+        username: 'Demo User',
+    };
 }
 
 export async function logout() {
-    return request('/api/v1/logout/all', {
-        method: 'POST',
-        meta: {
-            isAllResponseBody: true,
-        },
-    }, uaaServicePrefix);
+    // 模拟登出成功
+    return { success: true };
 }
 
 export interface fetchOauthCodeReqDto {
     token: string;
 }
 
-// sso第三方登录验证后，拿取用户信息
-export const fetchOauthCode = (code: string | string[], redirect: string) => {
-    return request<fetchOauthCodeReqDto>('/api/v1/account/oauth', {
-        method: 'POST',
-        data: {
-            code,
-            redirect,
-        },
-    }, userServicePrefix);
+// 模拟的OAuth验证函数
+export const fetchOauthCode = () => {
+    return Promise.resolve({ token: 'mock-token' });
 };

@@ -15,8 +15,7 @@
     "build": "cd packages/sea-lion-client && npm run build",
     "link": "cd packages/sea-lion-client && sudo npm link",
     "publish-stable": "pnpm run build && pnpm changeset && pnpm changeset publish",
-    "publish-fix": "pnpm changeset && pnpm changeset publish",
-    "preinstall": "npx only-allow pnpm"
+    "publish-fix": "pnpm changeset && pnpm changeset publish"
   },
   "devDependencies": {
     "@changesets/cli": "^2.28.1",

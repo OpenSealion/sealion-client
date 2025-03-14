@@ -2,8 +2,14 @@
 
 export const { VITE_NODE } = import.meta.env;
 
-// 开启单点登录开关
+// 开启单点登录开关 - 始终关闭
 export const openOSS = false;
+
+// 空白名单 - 不再需要验证
+export const AuthPages: string[] = [];
+
+// 空白名单 - 所有接口不需要token
+export const NoTokenApiPaths: string[] = [];
 
 export const ClientIdMap = {
     development: 'modjkaa3v93xnjop2weq',
@@ -29,17 +35,3 @@ export const TokenCookieDomainMap = {
 export const clientId = ClientIdMap[VITE_NODE];
 export const logURL = LogURLMap[VITE_NODE];
 export const TokenCookieDomain = TokenCookieDomainMap[VITE_NODE];
-
-// 针对权限更细化的配置信息
-
-// 需要权限验证的页面可以把对应的pathname放到这里
-export const AuthPages: string[] = [
-    '/mmbench-submission',
-    '/evaluate-submit',
-    '/evaluate-list',
-];
-
-// 有些接口不需要token
-export const NoTokenApiPaths: string[] = [
-    '/account/oauth',
-];

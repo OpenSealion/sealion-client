@@ -82,6 +82,7 @@ export interface DefaultRespDTO<T> {
     msgCode: number;
     msg: string;
     data: T;
+    trace_id: string;
 }
 
 export const ajax = <T>(api, {
