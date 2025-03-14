@@ -9,10 +9,11 @@
     "cli"
   ],
   "private": false,
-  "version": "0.3.3",
+  "version": "0.3.4",
   "license": "MIT",
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
   },
   "repository": {
     "type": "http",
@@ -63,5 +64,5 @@
     "tar-pack": "^3.4.1",
     "tmp": "^0.2.1"
   },
-  "gitHead": "1658dbcca7d4c718bae21b7017028cd438ba1a4e"
+  "gitHead": "2a5987c509cb3c89b6137ea4e957d83f2c155efa"
 }
