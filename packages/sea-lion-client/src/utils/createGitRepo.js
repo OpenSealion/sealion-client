@@ -20,7 +20,7 @@ function isInMercurialRepository () {
     }
 }
 
-function tryGitInit () {
+function tryGitInit(appPath) {
     try {
         execSync('git --version', { stdio: 'ignore' });
         if (isInGitRepository() || isInMercurialRepository()) {
@@ -28,9 +28,16 @@ function tryGitInit () {
         }
 
         execSync('git init', { stdio: 'ignore' });
-        return true;
+        
+        // 验证 .git 目录是否已创建
+        if (fs.existsSync(path.join(appPath, '.git'))) {
+            return true;
+        } else {
+            console.warn('Git 初始化成功但是 .git 目录未找到');
+            return false;
+        }
     } catch (e) {
-        console.warn('Git repo not initialized', e);
+        console.warn('Git 仓库初始化失败', e);
         return false;
     }
 }
@@ -38,7 +45,7 @@ function tryGitInit () {
 function tryGitCommit (appPath) {
     try {
         execSync('git add -A', { stdio: 'ignore' });
-        execSync('git commit -m "Initialize project using Create MM App"', {
+        execSync('git commit -m "feat: Initialize project by using Create SeaLionClient"', {
             stdio: 'ignore'
         });
         return true;

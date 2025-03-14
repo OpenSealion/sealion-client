@@ -1,0 +1,39 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    },
+    {
+      "id": 2
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "userinfo": {
+    "code": 0,
+    "data": {
+      "id": 1,
+      "name": "李剑阁",
+      "job": "scientist"
+    }
+  }
+}

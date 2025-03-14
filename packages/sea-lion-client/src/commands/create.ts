@@ -37,21 +37,28 @@ const create = (appName, templateType) => {
     handlePrivateFileCopy('.gitignore', 'gitignore', appPath);
     handlePrivateFileCopy('.npmrc', 'npmrc', appPath);
 
-    // Initialize git repo
-    let initializedGit = false;
-    if (tryGitInit()) {
-        initializedGit = true;
-        console.log('Initialized a git repository.');
-    }
-
-    if (initializedGit && tryGitCommit(appPath)) {
-        console.log('Created git commit.');
-    }
 
     // 安装依赖
     console.log('npm install ....');
     spawn.sync('npm', ['install'], { stdio: 'inherit' });
-    console.log('创建完成，进入项目后请先执行 ' + chalk.green('npm run inithook'));
+    
+    // 初始化 git 仓库
+    let initializedGit = false;
+    if (tryGitInit(appPath)) {
+        initializedGit = true;
+        console.log('Initialized a git repository.');
+        
+        // 先提交一次，确保 .git 目录完全创建好
+        if (tryGitCommit(appPath)) {
+            console.log('Created initial git commit.');
+            
+            // git 提交成功后再初始化 husky
+            console.log('Initializing husky...');
+            spawn.sync('npm', ['run', 'prepare'], { stdio: 'inherit' });
+        }
+    }
+
+    // console.log('创建完成，进入项目后请先执行 ' + chalk.green('npm run inithook'));
     console.log('详情查看readme');
     console.log(chalk.bgCyan('Finish! Happy hacking!'));
 };

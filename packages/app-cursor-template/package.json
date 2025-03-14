@@ -1,0 +1,42 @@
+{
+  "name": "@sea-lion/app-cursor-template",
+  "private": false,
+  "version": "0.1.0",
+  "keywords": [
+    "app-lab-template",
+    "sealion",
+    "sea lion",
+    "sea-lion-client",
+    "vite",
+    "webpack",
+    "cli"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "http",
+    "url": "https://github.com/opensealion/Sealion-CLI-React",
+    "directory": "packages/app-lab-template"
+  },
+  "scripts": {
+    "start": "node scripts/dev.js",
+    "create": "node scripts/create.js",
+    "remove": "node scripts/remove.js"
+  },
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "files": [
+    "template",
+    "template.json",
+    "template.tar.gz",
+    "scripts"
+  ],
+  "dependencies": {
+    "fs-extra": "^10.1.0",
+    "tar-pack": "^3.4.1"
+  },
+  "description": "",
+  "gitHead": "752db5a0f3e379ae3628fc5c243d1d5302e61c7d"
+}
