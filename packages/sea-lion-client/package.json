@@ -9,7 +9,7 @@
     "cli"
   ],
   "private": false,
-  "version": "0.3.1",
+  "version": "0.3.2",
   "license": "MIT",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
@@ -63,5 +63,5 @@
     "tar-pack": "^3.4.1",
     "tmp": "^0.2.1"
   },
-  "gitHead": "752db5a0f3e379ae3628fc5c243d1d5302e61c7d"
+  "gitHead": "1658dbcca7d4c718bae21b7017028cd438ba1a4e"
 }

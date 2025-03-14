@@ -1,7 +1,7 @@
 {
   "name": "@sea-lion/app-cursor-template",
   "private": false,
-  "version": "0.1.1",
+  "version": "0.1.2",
   "keywords": [
     "app-lab-template",
     "sealion",
@@ -38,5 +38,5 @@
     "tar-pack": "^3.4.1"
   },
   "description": "",
-  "gitHead": "752db5a0f3e379ae3628fc5c243d1d5302e61c7d"
+  "gitHead": "1658dbcca7d4c718bae21b7017028cd438ba1a4e"
 }
