@@ -3,7 +3,7 @@
   "private": false,
   "version": "0.1.7",
   "keywords": [
-    "app-lab-template",
+    "app-cursor-template",
     "sealion",
     "sea lion",
     "sea-lion-client",
@@ -18,7 +18,7 @@
   "repository": {
     "type": "http",
     "url": "https://github.com/opensealion/Sealion-CLI-React",
-    "directory": "packages/app-lab-template"
+    "directory": "packages/app-cursor-template"
   },
   "scripts": {
     "start": "node scripts/dev.js",
