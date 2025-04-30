@@ -1,0 +1,16 @@
+FROM node:18-alpine as builder
+WORKDIR /build/
+COPY ./package.json /build/
+RUN npm install
+ADD ./ /build/
+ARG env=dev
+RUN npm run build:$env
+RUN ls /build/dist
+
+
+FROM nginx:1.21-alpine
+COPY --from=builder /build/dist /usr/share/nginx/html
+RUN ls /usr/share/nginx/html
+COPY ./nginx/conf.d /etc/nginx/conf.d
+# RUN <shell script>
+EXPOSE 80/TCP
