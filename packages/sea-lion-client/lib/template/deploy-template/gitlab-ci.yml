@@ -1,0 +1,7 @@
+variables:
+  SERVICE_NAME: project-name-fe
+  PROJECT: <some>_platform
+
+include:
+  - project: devops/ci-templates
+    file: /templates/<default>.yml
